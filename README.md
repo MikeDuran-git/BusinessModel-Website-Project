@@ -2,9 +2,11 @@
 Project Rym, Mike, Shaboo, Ophelie
 
 ## TODO:
-Meeting Rym Mike to confirm the architecture of the website:
+
 - Database
+
     Table:
+
         - Client:
             - id (int) (PK)
             - Nom (string)
@@ -20,7 +22,6 @@ Meeting Rym Mike to confirm the architecture of the website:
         - Soin:
             - id (int) (PK)
             - Soin (txt)
-
         - Demande
             - id (int) (PK)
             - idClient (int) (FK Client)
@@ -28,7 +29,9 @@ Meeting Rym Mike to confirm the architecture of the website:
             - SoinFini (bool)
 
 - Website structure
+
     PAGES:
+
         - language english french adaptation
         - Header:
             - title : Thérapies Holistiques avec Khedoudja Rym MERAD
@@ -43,7 +46,6 @@ Meeting Rym Mike to confirm the architecture of the website:
                     - presente menu
                     - Links to other pages.
                         - page adapts to Link description.
-
         - Create 2nd Page
             - image/Text (adapte en fonction du choix menu)
             - "Prendre rdv" button
@@ -52,7 +54,6 @@ Meeting Rym Mike to confirm the architecture of the website:
                     - presente menu
                     - Links to other pages.
                         - page adapts to Link description.
-
         - Contact Page:
             - notification de "* Obligatoire"
             - Nom
@@ -82,11 +83,62 @@ Meeting Rym Mike to confirm the architecture of the website:
             - Button Submit
 
 
+# Application web avec Docker
+Cette application web utilise Docker pour exécuter un serveur web Nginx avec une page d'accueil simple en HTML et CSS. Pour lancer l'application, suivez les instructions ci-dessous.
+
+## Installation
+Pour lancer l'application, vous devez avoir Docker installé sur votre ordinateur. Si vous ne l'avez pas déjà, vous pouvez télécharger Docker depuis le site officiel : https://www.docker.com/products/docker-desktop.
+
+## Lancement de l'application
+Une fois que Docker est installé sur votre ordinateur, vous pouvez lancer l'application en suivant les étapes ci-dessous :
+
+1. Ouvrez une fenêtre de terminal (ou invite de commande) et accédez au dossier de votre projet.
+
+2. Exécutez la commande suivante pour créer une nouvelle image Docker :
+
+```bash
+make build
+```
+Cette commande créera une nouvelle image Docker à partir des fichiers de votre projet.
+
+3. Exécutez la commande suivante pour lancer un conteneur Docker à partir de l'image que vous venez de créer :
+
+```bash
+make run
+```
+Cette commande lancera un conteneur Docker qui exécute le serveur web Nginx et qui est accessible à l'adresse http://localhost:8080. Vous devriez voir une page d'accueil simple en HTML et CSS lorsque vous accédez à cette adresse.
+
+4. Si vous souhaitez arrêter le conteneur Docker, exécutez la commande suivante :
+
+```bash
+make stop
+```
+Cette commande arrêtera le conteneur Docker en cours d'exécution.
+
+5. Si vous souhaitez supprimer le conteneur Docker, exécutez la commande suivante :
+
+```bash
+make rm
+```
+Cette commande supprimera le conteneur Docker en cours d'exécution.
+
+## Mise à jour de l'application
+Si vous apportez des modifications à votre application et que vous souhaitez les appliquer, vous pouvez utiliser la commande suivante pour mettre à jour votre application :
 
 
-## Possible Technologies to use: (to be discussed)
-- Docker Container (favorable)
-- html, css 
+```bash
+make update
+```
+Cette commande effectuera les étapes suivantes :
+
+1. Elle exécutera la commande `make build` pour créer une nouvelle image Docker à partir de vos fichiers modifiés.
+
+2. Elle exécutera les commandes `make stop` et `make rm` pour arrêter et supprimer le conteneur Docker en cours d'exécution.
+
+3. Elle exécutera la commande `make run` pour lancer un nouveau conteneur Docker à partir de la nouvelle image Docker.
+
+Vous devriez maintenant voir les modifications que vous avez apportées à votre application web lorsque vous accédez à l'adresse http://localhost:8080.
+
 
 
 
