@@ -1,29 +1,37 @@
-header {
-  background-color: green;
+/* Style the dropdown button */
+.dropdown-btn {
+  background-image: url("/images/Menu_Icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
   color: white;
-  padding: 20px;
-  text-align: center;
-}
-body {
-  background-color: #f2f2f2;
+  padding: 14px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  padding: 20px;
+.dropdown-btn img {
+  width: 80%;
+  height: auto;
 }
 
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  float: left; 
+
+/* Style the dropdown container */
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
 }
+
+/* Style the links */
+.dropdown-container a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
