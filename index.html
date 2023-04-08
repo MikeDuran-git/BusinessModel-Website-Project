@@ -6,10 +6,9 @@
   </head>
   <body>
 
-      <header class="w3-container w3-red">
-          <h1>Thérapies Holistiques avec Khedoudja Rym Merad</h1>
-      </header>
-      
+    <header class="w3-container w3-red">
+      <h1 class="responsive-header">Thérapies Holistiques avec Khedoudja Rym Merad</h1>
+    </header>      
       <div class="w3-container">
         <div class="w3-row">
           <!--menu left side-->
@@ -20,18 +19,18 @@
               </button>
               
               <div class="dropdown-container" id="links-container" style="display:none">
-                <a href="#">Link 1</a><br>
-                <a href="#">Link 2</a><br>
-                <a href="#">Link 3</a><br>
+                <a href="javascript:void(0);" onclick="afficherPage('page_acceil')">Page d'accueil</a><br>
+                <a href="javascript:void(0);" onclick="afficherPage('page1')">Link 2</a><br>
+                <a href="javascript:void(0);" onclick="afficherPage('page2')">Link 3</a><br>
               </div>
             </div>
           </div>
         
           <!--center-->
           <div class="w3-col s9">
-            <img src="/images/test.jpg" alt="image" style="width:50%">
+            <img id="image-center" src="/images/test.jpg" alt="image" style="width:50%">
             <div class="w3-container">
-              <p>
+              <p id="paragraphe-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac 
                 pharetra eros. Fusce ultricies nisl eget leo rutrum eleifend. Sed
                 volutpat mi a tellus eleifend, ut laoreet mauris malesuada. 

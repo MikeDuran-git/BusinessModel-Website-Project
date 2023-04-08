@@ -53,8 +53,6 @@
 img {
   max-height: 60vh;
 }
-
-h1 {
-  width: 20%;
-  margin: 0 auto;
+.responsive-header {
+  font-size: 3vw;
 }
