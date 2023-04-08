@@ -1,7 +1,7 @@
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
-  width: 20vw;
+  width: 20%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -15,8 +15,8 @@
 .dropdown-btn {
   background-color: #4CAF50;
   color: white;
-  padding: 1vw;
-  font-size: 2vh;
+  padding: 1%;
+  font-size: 2vw;
   border: none;
   cursor: pointer;
   text-align: left;
@@ -24,35 +24,37 @@
 
 /* Style the menu icon */
 .menu-icon {
-  width: 3vw;
-  height: 3vw;
+  width: 5vw;
+  height: 5vw;
 }
 
 /* Style the dropdown container */
 .dropdown-container {
   display: none;
-  padding-left: 1vw;
+  padding-left: 1%;
 }
 
 /* Style the links */
 .dropdown-container a {
   color: white;
-  padding: 2vh 2vw;
+  padding: 2% 2%;
   text-decoration: none;
   display: block;
 }
 
-/* Center content */
-.w3-row {
-  margin-top: 5vh;
-}
-
 /* Limit max width of center content */
 .w3-col.s9 {
-  max-width: 70vw;
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* Limit max height of image */
 img {
   max-height: 60vh;
+}
+
+h1 {
+  width: 20%;
+  margin: 0 auto;
 }
