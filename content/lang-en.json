@@ -1,0 +1,20 @@
+{
+    "header": {
+      "title": "Holistic Therapies with Khedoudja Rym Merad",
+      "language": "[en|fr]"
+    },
+    "menu": {
+      "home": "Home",
+      "link2": "Link 2",
+      "link3": "Link 3"
+    },
+    "content": {
+      "image": "/images/test.jpg",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac pharetra eros. Fusce ultricies nisl eget leo rutrum eleifend. Sed volutpat mi a tellus eleifend, ut laoreet mauris malesuada. Praesent sagittis, mauris id pharetra molestie, elit ex rutrum felis, ut euismod est ex a odio. Suspendisse ut libero at risus auctor bibendum. Duis eu ex ac lorem mattis tincidunt nec in sem. Nulla facilisi. Aliquam erat volutpat.",
+      "button": "Take an appointment"
+    },
+    "footer": {
+      "text": "Footer"
+    }
+  }
+  
