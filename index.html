@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <header class="w3-red w3-container" style="display: flex; justify-content: center; align-items: center;">
+    <header class="w3-container" style="background-color: #8c76a1;display: flex; justify-content: center; align-items: center;">
       <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
         <div style="text-align: center; flex-grow: 1;">
           Thérapies Holistiques avec Khedoudja Rym Merad
@@ -22,8 +22,8 @@
         <!--menu left side-->
         <div class="w3-col s3">
           <div class="sidenav">
-            <button class="dropdown-btn" onclick="toggleLinks()">
-              <img src="/images/Menu_Icon.png" alt="Menu_Icon" class="menu-icon" style="width: 5vw">
+            <button class="dropdown-btn" onclick="toggleLinks()" style="background-color:#d291bc">
+              <img src="/images/Menu_Icon.png" alt="Menu_Icon" class="menu-icon" style="width: 5vw;">
             </button>
             
             <div class="dropdown-container" id="links-container" style="display:none">
@@ -54,13 +54,13 @@
         </div>
         <!--button demande rdv-->
         <div class="w3-right">
-          <button>Prendre RDV</button>
+          <button onclick="location.href = './form1.html'" style="background-color: #d291bc ;" >Prendre RDV</button>
         </div>
       </div>  
     </div>
 
     <!--Footer-->
-    <footer class="w3-container w3-red">
+    <footer class="w3-container " style="background-color: #8c76a1;">
       <p>Footer</p>
     </footer>
       
