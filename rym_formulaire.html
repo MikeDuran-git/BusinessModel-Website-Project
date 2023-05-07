@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Appointment Form</title>
+    <style>
+	/* Small screens */
+@media only screen and (max-width: 600px) {
+    form {
+			background-color: #ffffff;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			padding: 150px;
+			width: 600px;
+			margin: 0 auto;
+		}
+        label {
+			display: block;
+			margin-bottom: 5px;
+			color: #957dad;
+		}
+	
+	.row {
+		flex-direction: column;
+	}
+	
+	input[type="text"], input[type="email"], input[type="checkbox"] ,input[type="date"], input[type="time"]{
+            border-radius: 2px;
+			border-color: #8c76a1;
+			padding: 10px;
+			width: 35%;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+            border-color: #d291bc;
+		}
+		
+		input[type="checkbox"] {
+			margin-right: 5px;
+			display: block;
+		}
+		
+		.btn {
+			background-color: #d291bc;
+			border: none;
+			color: #ffffff;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+            margin: 0 auto; 
+            width: fit-content;
+		}
+
+        textarea#reason {
+        height: 100px;
+        width: 200px;
+        padding: 30px;
+        border-radius: 2px;
+        border-color: #d291bc;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        }
+
+    h1 {
+			color: #a83481;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+        input::placeholder, textarea::placeholder {
+             opacity: 0.5; 
+        }
+       
+
+}
+
+/* Medium and large screens */
+@media only screen and (min-width: 601px) {
+    form {
+			background-color: #ffffff;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			padding: 100px;
+			width: 500px;
+			margin: 0 auto;
+		}
+
+        label {
+			display: block;
+			margin-bottom: 5px;
+			color: #957dad;
+		}
+	
+    h1 {
+			color: #a83481;
+			text-align: center;
+			margin-top: 50px;
+		}
+        
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+    textarea#reason {
+       height: 100px;
+       width: 500px;
+       padding: 8px;
+       border-radius: 2px;
+       border-color: #d291bc;
+       margin-bottom: 10px;
+       box-sizing: border-box;
+}
+
+	
+	input[type="text"], input[type="email"],input[type="checkbox"], input[type="date"], input[type="time"] {
+			border-radius: 3px;
+			padding: 8px;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+            border-color: #d291bc;
+		}
+	
+
+		input[type="checkbox"] {
+			margin-right: 5px;
+		}
+		
+		.btn {
+			background-color: #d291bc;
+			border: none;
+			color: #ffffff;
+			padding: 10px 40px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+            /*display: block; */
+            margin: 0 auto; 
+            width: fit-content;
+            width: 180px;
+            height: auto;
+		}
+
+        input::placeholder, textarea::placeholder {
+             opacity: 0.5; 
+}
+}
+</style>
+</head>
+<body>
+	<h1>Appointment Form</h1>
+	<form>
+		<div class="row">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required>
+			</div>
+			<div>
+				<label for="last-name">Last Name</label>
+				<input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+			</div>
+		</div>
+        <br>
+		<div class="row">
+			<div>
+				<label for="date-of-birth">Date of Birth</label>
+				<input type="date" id="date-of-birth" name="date-of-birth" required>
+			</div>
+			<div>
+				<label for="address">Address</label>
+				<input type="text" id="address" name="address" placeholder="Enter your address" required>
+			</div>
+		</div>
+        <br>
+		<div class="row">
+			<div>
+				<label for="phone-number">Phone Number</label>
+				<input type="text" id="phone-number" name="phone-number" placeholder="Enter your phone number">
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email">
+			</div>
+		</div>
+        <br>
+		<div class="row">
+			<div>
+				<label for="date-time">Preferred Date and Time</label>
+				<input type="datetime-local" id ="date-time" name="date-time" required>
+			</div>
+            
+			<div>
+                <br>
+                <label style="display: inline-block;">First Visit?</label>
+                <input type="radio" id="first-visit-yes" name="first-visit" value="Yes" checked style="display: inline-block;">
+                <label for="first-visit-yes" style="display: inline-block;">Yes</label>
+                <input type="radio" id="first-visit-no" name="first-visit" value="No" style="display: inline-block;">
+                <label for="first-visit-no" style="display: inline-block;">No</label>
+            </div>
+            
+            
+		</div>
+        <br><br>
+		<div class="row">
+		<div>
+		<label for="tatoo">Doctor<input type="checkbox" name="tattoo" value="tattoo"></label>
+	    <label>Psychologist<input type="checkbox" name="psychologist" value="psychologist"></label>
+		</div>
+		<div>
+      <label for="doctor">Operation<input type="checkbox" name="doctor" value="doctor"></label>
+      <label for="operation">Tattoo<input type="checkbox" name="operation" value="operation"></label>
+		</div>
+		<div>
+      <label> Taking any medication<input type="checkbox" name="medication" value="medication" onclick=""></label>
+
+      <div id="medication-question" style="display:none;">
+        <label for="medication-input">If yes, what medication are you taking?</label>
+        <input type="text" id="medication-input">
+      </div>
+	   </div>
+		</div>
+		
+		</div>
+		<div class="row">
+			<div>
+				<label for="reason">Reason for Appointment</label>
+				<textarea id="reason" name="reason" placeholder="Enter the reason for your appointment" required></textarea>
+			</div>
+		</div>
+        <br><br><br><br>
+		<div class="row">
+			<button type="submit" class="btn">Submit</button>
+		</div>
+	</form>
+
+	<script>
+      const medicationCheckbox = document.querySelector('input[name="medication"]');
+      const medicationQuestion = document.getElementById('medication-question');
+
+      medicationCheckbox.addEventListener('change', () => {
+        if (medicationCheckbox.checked) {
+          medicationQuestion.style.display = 'block';
+        } else {
+          medicationQuestion.style.display = 'none';
+        }
+      });
+    </script>
+</body>
+</html>
